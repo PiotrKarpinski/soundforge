@@ -1,0 +1,21 @@
+@import 'settings.scss';
+
+
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: $color-one;
+	margin: auto;
+	width: 60vw;
+	padding: 36px 24px;
+}
+
+.component {
+	margin: 24px auto;
+	padding: 12px;
+	width: 30vw;
+	background-color: $color-four;
+	justify-content: space-between;
+	
+
+}

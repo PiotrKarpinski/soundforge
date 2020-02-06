@@ -2,7 +2,55 @@
 
 .component {
 	background-color: $color-one;
-	margin: auto;
+	margin:24px auto;
 	width: 60vw;
 	padding: 36px 24px;
+}
+
+form {
+	border: solid 4px $color-four;
+	border-radius: 12px;
+	width: 30vw;
+	margin: auto;
+
+	.input {
+		display: block;
+		margin: 24px auto;
+		width: 60%;
+		display: flex;
+		align-items: center;
+
+		p {
+			font-size: 12px;
+		}
+	}
+
+	.submit {
+		border:none;
+		padding: 6px;
+		margin: 24px auto;
+		width: 30%;
+	}
+
+
+}
+
+
+
+.row {
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: space-between;
+}
+
+.description {
+	width: 40vw;
+	margin: auto;
+}
+
+.photo {
+margin: 12px auto; 
+width: 40vw;
+height: 30vh;
+background-color:white;
 }

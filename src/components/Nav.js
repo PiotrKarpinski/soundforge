@@ -1,5 +1,8 @@
 import React from 'react';
 import style from './css/Nav.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faSoundcloud } from '@fortawesome/free-brands-svg-icons';
 
 function Nav() {
   return ( 

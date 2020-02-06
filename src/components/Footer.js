@@ -1,16 +1,25 @@
 import React from 'react';
+import styles from './css/Footer.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faSoundcloud } from '@fortawesome/free-brands-svg-icons';
+
 
 function Footer() {
   return ( 
-  <div>
-	<nav>
+  
+	<footer className={styles.footer}>
 	 	<ul>
-	 		<li><a href='#'></a>a</li>
-	 		<li><a href='#'></a>b</li>
-	 		<li><a href='#'></a>c</li>
+	 		<li><a href='#'><FontAwesomeIcon className={styles.logo} icon={faFacebook}/></a></li>
+
+	 		<li><a href='#'><FontAwesomeIcon className={styles.logo} icon={faSoundcloud}/></a></li>
+
+	 		<li><a href='#'><FontAwesomeIcon className={styles.logo} icon={faLinkedin}/></a></li>
+
 	 	</ul>
-	</nav>
-  </div>
+	</footer>
+  
   );
 }
 

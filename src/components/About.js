@@ -3,7 +3,7 @@ import styles from './css/Component.module.scss';
 
 function About() {
   return ( 
-  <section className={styles.component}>
+  <section id='about' className={styles.component}>
   <h3>O mnie</h3>
   <div className={styles.row}>
   <div className={styles.description}>

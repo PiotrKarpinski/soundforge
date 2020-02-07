@@ -10,7 +10,7 @@
 form {
 	border: solid 4px $color-four;
 	border-radius: 12px;
-	width: 30vw;
+	width: 40vw;
 	margin: auto;
 
 	.input {
@@ -44,13 +44,13 @@ form {
 }
 
 .description {
-	width: 40vw;
+	width: 50%;
 	margin: auto;
 }
 
 .photo {
 margin: 12px auto; 
-width: 40vw;
+width: 500px;
 height: 30vh;
 background-color:white;
 }

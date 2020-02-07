@@ -16,6 +16,36 @@
 	width: 30vw;
 	background-color: $color-four;
 	justify-content: space-between;
+	position: relative;
 	
+}
 
+.name {
+	margin: 0;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	letter-spacing: 4px;
+	transition: $transition;
+
+}
+
+.button {
+	cursor: pointer;
+	border: none;
+}
+
+.play {
+	transition: $transition;
+	opacity: 0;
+}
+
+.component:hover .name {
+	opacity: 0;
+	left: 0;
+}
+
+.component:hover .play {
+	opacity: 1;
 }

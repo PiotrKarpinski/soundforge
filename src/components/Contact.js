@@ -5,7 +5,7 @@ import { faEnvelope } from '@fortawesome/free-brands-svg-icons';
 
 function Contact() {
   return ( 
-  <section className={styles.component}>
+  <section id='contact' className={styles.component}>
   <h3>Kontakt</h3>
   	<form>
   		<div>

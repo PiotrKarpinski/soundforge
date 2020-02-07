@@ -11,11 +11,11 @@ function Footer() {
   
 	<footer className={styles.footer}>
 	 	<ul>
-	 		<li><a href='#'><FontAwesomeIcon className={styles.logo} icon={faFacebook}/></a></li>
+	 		<li><a href='https://www.facebook.com/layzee.beats/'><FontAwesomeIcon className={styles.logo} icon={faFacebook}/></a></li>
 
-	 		<li><a href='#'><FontAwesomeIcon className={styles.logo} icon={faSoundcloud}/></a></li>
+	 		<li><a href='https://soundcloud.com/layzeone'><FontAwesomeIcon className={styles.logo} icon={faSoundcloud}/></a></li>
 
-	 		<li><a href='#'><FontAwesomeIcon className={styles.logo} icon={faLinkedin}/></a></li>
+	 		<li><a href='https://www.linkedin.com/in/pgmkarpinski/'><FontAwesomeIcon className={styles.logo} icon={faLinkedin}/></a></li>
 
 	 	</ul>
 	</footer>

@@ -29,9 +29,19 @@
 		padding: 0 8px;
 		border-right: 2px solid black;
 
+
 		a {
+			transition: $transition;
+			cursor: pointer;
 			color: black;
+			
 		}
+
+		a:hover {
+
+			color: grey;
+		}
+
 	}
 
 

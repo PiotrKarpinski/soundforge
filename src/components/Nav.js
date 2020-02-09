@@ -11,7 +11,7 @@ function Nav() {
 	<nav className={style.nav}>
 
 		<Link 
-			activeClass="active"
+			activeClass="logo"
 		    to="header"
 		    spy={true}
 		    smooth={true}
@@ -24,9 +24,9 @@ function Nav() {
 				activeClass="active"
 			    to="about"
 			    spy={true}
-			    smooth={true}
+			    smooth='easeOutCirc'
 			    offset={-70}
-			    duration= {400}
+			    duration= {700}
 			    >O mnie</Link></li>
 
 			<li><a rel="noopener noreferrer" target='_blank' href='https://www.youtube.com/watch?v=_tm-uZxzpeg'>Youtube <FontAwesomeIcon icon={faYoutube}/></a></li>

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './css/Component.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function Contact() {
   return ( 
@@ -9,7 +9,7 @@ function Contact() {
   <h3>Kontakt</h3>
   	<form>
   		<div>
-  		<h5>Imie i nazwisko:</h5>
+  		<h5>Adres email:</h5>
   		<input className={styles.input} type='text'/>
   		<h5>Nazwa zlecenia:</h5>
   		<input className={styles.input} type='text'/>
@@ -18,7 +18,7 @@ function Contact() {
   		<input type="checkbox"/>
   		<p>Moje oczekiwania finansowe, biorąc pod uwagę średnie zarobki to 3300 netto. Jestem skłonny do negocjacji.</p>
   		</div>
-  		<button className={styles.submit} type='submit'>Wyślij</button>	
+  		<button className={styles.submit} type='submit'><FontAwesomeIcon icon={faEnvelope}/></button>	
   	</form>
   </section>
   );

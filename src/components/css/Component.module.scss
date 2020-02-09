@@ -19,6 +19,9 @@ form {
 		width: 60%;
 		display: flex;
 		align-items: center;
+		border-radius: 4px;
+		border: none;
+		padding: 4px;
 
 		p {
 			font-size: 12px;
@@ -30,6 +33,14 @@ form {
 		padding: 6px;
 		margin: 24px auto;
 		width: 30%;
+		background-color: white;
+		cursor: pointer;
+		transition: $transition;
+
+	}
+
+	.submit:hover {
+	 color: grey;
 	}
 
 

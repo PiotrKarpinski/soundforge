@@ -11,6 +11,7 @@ class SoundComponent extends React.Component {
 	audio = new Audio(this.props.url)
 
 	componentDidMount() {
+
     this.audio.addEventListener('ended', () => this.setState({ play: false }));
   }
 
@@ -19,16 +20,18 @@ class SoundComponent extends React.Component {
   }
 
   togglePlay = () => {
+  	console.log(window.scrollY)
   	console.log('test');
     this.setState({ play: !this.state.play }, () => {
       this.state.play ? this.audio.play() : this.audio.pause();
     });
   }
 
+
+
  render(){
- 	console.log(this.state.play ? {faPause} : {faPlay})
   return ( 
-  <div className={styles.component}>  	 
+  <div style={this.state.play ? {border: 2+'px solid blue'}:{ border: 'none' } } className={styles.component}>  	 
   	<h3 className={styles.name}>{this.props.title}</h3>
 
   	<button className={styles.button} onClick={this.togglePlay}><FontAwesomeIcon className={styles.play} icon={this.state.play ? faPause : faPlay}/></button>

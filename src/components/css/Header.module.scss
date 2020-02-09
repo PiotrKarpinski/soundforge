@@ -16,7 +16,7 @@ h1 {
 }
 
 .main:hover .link {
-	background-color: blue;
+	color: black;
 }
 
 .link {
@@ -26,4 +26,8 @@ h1 {
 	border: 2px solid black;
 	padding: 4px;
 	border-radius: 4px;
+}
+
+.link:hover  {
+	background-color: grey;
 }

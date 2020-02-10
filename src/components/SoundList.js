@@ -35,31 +35,25 @@ class SoundList extends React.Component {
 
 render(){
 
-const sounds = [
-{id: 0, url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3', title: 'Udźwiękowienie gry'},
-{id: 1, url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3', title: 'Dubbing, Lektor'},
-{id: 2, url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3', title: 'Sound design'},
-{id: 3, url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3', title: 'Muzyka do intro'},
-{id: 4, url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3', title: 'Podkład na zamówienie'},
-{id: 5, url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3', title: 'Jingiel radiowy'}
 
-]  
+
   return ( 
   <section>
-    <TransitionGroup className= {styles.list}> {
-      sounds.map(({id, url, title }) => (
+  <h3>{this.props.list}</h3>
+    <TransitionGroup style={{backgroundColor: this.props.color}} className={styles.list}> {
+      this.props.beats.map(({id, url, title, BPM, price, type, sold }) => (
       <CSSTransition
-        key={id}
         in={this.state.inProp}
+        key={id}
         timeout={400}
         classNames="display"
-        mountOnEnter
+        
         unmountOnExit
         appear={false}
 
       >
 
-        <SoundComponent url={url} title={title}/>
+        <SoundComponent url={url} title={title} bpm={BPM} price={price} type={type} sold={sold}/>
 
       </CSSTransition> 
 
@@ -70,5 +64,6 @@ const sounds = [
   );
 }}
 
-
 export default SoundList;
+
+

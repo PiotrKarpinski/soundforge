@@ -35,7 +35,11 @@ class SoundComponent extends React.Component {
   	<h3 className={styles.name}>{this.props.title}</h3>
 
   	<button className={styles.button} onClick={this.togglePlay}><FontAwesomeIcon className={styles.play} icon={this.state.play ? faPause : faPlay}/></button>
-
+  	<div className={styles.info}>
+  	<h4>Price: {this.props.price}</h4>
+  	<h4>License: {this.props.type}</h4>
+  	<h4>BPM: {this.props.bpm}</h4>
+  	</div>
   </div>
   );
 }}

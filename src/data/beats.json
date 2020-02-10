@@ -1,0 +1,118 @@
+{
+	"beats":
+	[
+	{
+		"id": 1,
+		"BPM": "140",
+		"title": "Regret",
+		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+		"price": 99.99,
+		"type": "Lease",
+		"date": 10022020,
+		"sold": false		
+	},
+	{
+		"id": 2,
+		"BPM": 93,
+		"title": "Fallin",
+		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+		"price": 199.99,
+		"type": "Lease",
+		"date": 10022020,
+		"sold": false
+	},
+	{
+		"id": 3,
+		"BPM": 103,
+		"title": "Slow Down",
+		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+		"price": 49.99,
+		"date": 10022020,
+		"type": "Exclusive",
+		"sold": true		
+	},
+	{
+		"id": 4,
+		"BPM": 93,
+		"title": "Regret",
+		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+		"price": 79.99,
+		"date": 10022020,
+		"type": "Exclusive",
+		"sold": true	
+	},
+	{
+		"id": 5,
+		"BPM": 133,
+		"date": 10022019,
+		"title": "Mistakes",
+		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+		"price": 149.99,
+		"type": "Lease",
+		"sold": false			
+	},	
+	{
+		"id": 6,
+		"BPM": 83,
+		"title": "Problem",
+		"date": 15012020,
+		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+		"price": 199.99,
+		"type": "Exclusive",
+		"sold": true			
+	},
+		{
+		"id": 7,
+		"BPM": "140",
+		"title": "Regret",
+		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+		"price": 99.99,
+		"type": "Lease",
+		"date": 10022020,
+		"sold": true		
+	},
+	{
+		"id": 8,
+		"BPM": 93,
+		"title": "Fire me",
+		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+		"price": 199.99,
+		"type": "Lease",
+		"date": 10022020,
+		"sold": false
+	},
+	{
+		"id": 9,
+		"BPM": 103,
+		"title": "Get Down",
+		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+		"price": 49.99,
+		"date": 10022020,
+		"type": "Exclusive",
+		"sold": true		
+	},
+	{
+		"id": 10,
+		"BPM": 93,
+		"title": "Red",
+		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+		"price": 79.99,
+		"date": 10022020,
+		"type": "Exclusive",
+		"sold": true	
+	},
+	{
+		"id": 11,
+		"BPM": 93,
+		"date": 10022019,
+		"title": "Mistakes",
+		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+		"price": 149.99,
+		"type": "Lease",
+		"sold": false			
+	}
+
+		
+]
+}
+

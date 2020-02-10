@@ -2,28 +2,37 @@
 
 
 .list {
-	display: flex;
+	display: inline-block;
 	flex-wrap: wrap;
 	background-color: $color-one;
-	margin: auto;
-	width: 60vw;
+	margin: 12px;
 	padding: 36px 24px;
+	width: 45vw;
 }
 
 .component {
 	margin: 24px auto;
 	padding: 12px;
-	width: 30vw;
 	background-color: $color-four;
-	justify-content: space-between;
 	position: relative;
 	
+}
+
+.info {
+	margin-top: 24px;
+}
+
+.info h4 {
+	margin: 12px;
+	padding-left: 8px;
+	display: inline;
+	border-left: solid 2px black;
 }
 
 .name {
 	margin: 0;
 	left: 50%;
-	top: 50%;
+	top: 20%;
 	transform: translate(-50%,-50%);
 	position: absolute;
 	letter-spacing: 4px;

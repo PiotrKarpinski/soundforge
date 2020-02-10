@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './css/Component.module.scss';
 
-function About() {
+function Samples() {
   return ( 
   <section id='about' className={styles.component}>
   <h3>O mnie</h3>
@@ -20,4 +20,4 @@ function About() {
   );
 }
 
-export default About;
+export default Samples;

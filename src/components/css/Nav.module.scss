@@ -3,18 +3,16 @@
 
 
 .nav {
-	padding: 12px 24px;
-	justify-content: flex-end;
+	margin: auto;
 	background-color: $color-one;
-	display: flex;
-	flex-direction: row;
 	position: fixed;
 	width: 100%;
+    z-index: 9999;
+    -webkit-box-shadow: inset 0px -66px 42px -15px rgba(105,105,105,0.63);
+	-moz-box-shadow: inset 0px -66px 42px -15px rgba(105,105,105,0.63);
+	box-shadow: inset 0px -66px 42px -15px rgba(105,105,105,0.63);
 
-}
 
-.logo {
-	margin-right: auto;
 }
 
 
@@ -22,15 +20,15 @@
 .nav ul{
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
+	padding: 8px;
 
 	li {
 		display: inline;
-		padding: 0 8px;
-		border-right: 2px solid black;
+		padding: 12px;
 
 
 		a {
+			font-size: 18px;
 			transition: $transition;
 			cursor: pointer;
 			color: black;
@@ -39,16 +37,12 @@
 
 		a:hover {
 
-			color: grey;
+			color: $color-four;
 		}
 
 	}
 
 
-	li:last-child {
-		border: none;
-		margin-right: 24px;
-	}
 
 }
 

@@ -38,9 +38,9 @@ render(){
 
 
   return ( 
-  <section>
+  <section className={styles.list}>
   <h3>{this.props.list}</h3>
-    <TransitionGroup style={{backgroundColor: this.props.color}} className={styles.list}> {
+    <TransitionGroup style={{backgroundColor: this.props.color}}> {
       this.props.beats.map(({id, url, title, BPM, price, type, sold }) => (
       <CSSTransition
         in={this.state.inProp}

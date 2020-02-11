@@ -6,7 +6,22 @@
 
 }
 
+.beats {
+  background-image: url(./images/background.jpg);
+  background-size: cover;
+}
+
+.beats h2 {
+  padding-top: 36px;
+  color: #ededed;
+  letter-spacing: 4px;
+  font-size: 36px;
+}
+
+
+
 .container {
+  margin-top: 96px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -15,6 +30,11 @@
 
 .active {
     border-bottom: 1px solid #333;
+}
+
+h4,h3,h2{
+  margin: 0;
+  padding: 0;
 }
 
 a {

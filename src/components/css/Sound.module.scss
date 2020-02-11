@@ -1,21 +1,28 @@
 @import 'settings.scss';
 
 
+
 .list {
 	display: inline-block;
 	flex-wrap: wrap;
-	background-color: $color-one;
-	margin: 12px;
+	margin: 48px 12px;
 	padding: 36px 24px;
 	width: 45vw;
+
+
+	h3 {
+		color: $color-one;
+	}
 }
 
 .component {
 	margin: 24px auto;
 	padding: 12px;
-	background-color: $color-four;
+	background-color: $color-one;
 	position: relative;
-	
+	border-radius: 16px;
+	opacity: 0.8;
+
 }
 
 .info {
@@ -23,13 +30,18 @@
 }
 
 .info h4 {
-	margin: 12px;
-	padding-left: 8px;
+	
+	padding: 0 8px;
 	display: inline;
 	border-left: solid 2px black;
 }
 
+.info h4:first-child {
+	border: none;
+}
+
 .name {
+	color: $color-three;
 	margin: 0;
 	left: 50%;
 	top: 20%;
@@ -41,7 +53,7 @@
 }
 
 .button {
-	background-color: $color-four;
+	background-color: $color-one;
 	cursor: pointer;
 	border: none;
 	width: 100%;
@@ -52,9 +64,7 @@
 	outline: none;
 	}
 
-.button:focus.component {
-	background-color: red;
-}
+
 
 .play {
 	transition: $transition;
@@ -62,6 +72,7 @@
 }
 
 .component:hover {
+	opacity: 1;
 	box-shadow: 2px 4px 16px $color-four; 
 }
 

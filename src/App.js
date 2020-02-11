@@ -2,11 +2,13 @@ import React from 'react';
 import Nav from './components/Nav.js';
 import Header from './components/Header.js';
 import SoundList from './components/SoundList.js';
-import Samples from './components/Samples.js';
+import Portfolio from './components/Portfolio.js';
 import Contact from './components/Contact.js';
 import Footer from './components/Footer.js';
 import './App.css';
 import { connect } from 'react-redux';
+import './components/css/settings.scss';
+
 
 const lease = [];
 const exclusive = [];
@@ -24,24 +26,29 @@ console.log(this.props.beats)
 for (let beat of this.props.beats) {
   if (beat.type === 'Lease')
     lease.push(beat)
-  if (beat.type === 'Exclusive')
+  if (beat.type === 'Exclusive' && beat.sold === false)
     exclusive.push(beat)
   if (beat.sold)
     sold.push(beat)  
 }
+
+
 
   
   return (
     <div className = 'App'>
     <Nav/>
     <Header/>
-    <div className='container'>
-    <SoundList color='black' list="Latest" beats={lease}/>
-    <SoundList color='blue' list="Sold" beats={sold}/>
-    <SoundList color='grey' list="Exclusive" beats={exclusive}/>
-    <SoundList color='yellow' list="Lease" beats={lease}/>
+    <div className='beats'>
+    <h2>Beats Library</h2>
+    <div id='beats' className='container'>
+    <SoundList  list="Latest" beats={lease}/>
+    <SoundList  list="Recently sold" beats={sold}/>
+    <SoundList  list="Exclusive" beats={exclusive}/>
+    <SoundList  list="Lease" beats={lease}/>
     </div>
-    <Samples/>
+    </div>
+    <Portfolio/>
     <Contact/>
     <Footer/>
 

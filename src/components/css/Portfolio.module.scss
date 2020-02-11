@@ -1,0 +1,22 @@
+@import 'settings.scss';
+
+
+.component {
+	background-color: $color-one;
+	margin:24px auto;
+	width: 60vw;
+	padding: 36px 24px;
+}
+
+
+.row {
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: space-between;
+}
+
+.description {
+	width: 50%;
+	margin: auto;
+}
+

@@ -31,12 +31,12 @@ class SoundComponent extends React.Component {
 
  render(){
   return ( 
-  <div style={this.state.play ? {border: 2+'px solid blue'}:{ border: 'none' } } className={styles.component}>  	 
-  	<h3 className={styles.name}>{this.props.title}</h3>
+  <div style={this.state.play ? {opacity: 1}:{ border: 'none' } } className={styles.component}>  	 
+  	<h4 className={styles.name}>{this.props.title}</h4>
 
   	<button className={styles.button} onClick={this.togglePlay}><FontAwesomeIcon className={styles.play} icon={this.state.play ? faPause : faPlay}/></button>
   	<div className={styles.info}>
-  	<h4>Price: {this.props.price}</h4>
+  	<h4>Price: {this.props.price}$</h4>
   	<h4>License: {this.props.type}</h4>
   	<h4>BPM: {this.props.bpm}</h4>
   	</div>

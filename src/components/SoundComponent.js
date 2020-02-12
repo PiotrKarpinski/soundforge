@@ -3,6 +3,7 @@ import styles from './css/Sound.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import { faPause } from '@fortawesome/free-solid-svg-icons';
+import Image from './Image.js';
 
 class SoundComponent extends React.Component {
 	state = {
@@ -31,15 +32,21 @@ class SoundComponent extends React.Component {
 
  render(){
   return ( 
-  <div style={this.state.play ? {opacity: 1}:{ border: 'none' } } className={styles.component}>  	 
-  	<h4 className={styles.name}>{this.props.title}</h4>
-
-  	<button className={styles.button} onClick={this.togglePlay}><FontAwesomeIcon className={styles.play} icon={this.state.play ? faPause : faPlay}/></button>
-  	<div className={styles.info}>
-  	<h4>Price: {this.props.price}$</h4>
-  	<h4>License: {this.props.type}</h4>
-  	<h4>BPM: {this.props.bpm}</h4>
-  	</div>
+  <div style={this.state.play ? {opacity: 1}:{ border: 'none' }} className={styles.component}>
+	  <div className ={styles.img}> 
+	  	<Image img={this.props.img}/>
+	  </div>
+	  <div className={styles.player}> 	 
+	  	<h4 className={styles.name}>{this.props.title}</h4>
+	  	<button className={styles.button} onClick={this.togglePlay}><FontAwesomeIcon className={styles.play} icon={this.state.play ? faPause : faPlay}/></button>
+	  </div>
+	  <div className={styles.info}>
+	  <span>
+	  	<h4>Price: {this.props.price}$</h4>
+	  	<h4>License: {this.props.type}</h4>
+	  	<h4>BPM: {this.props.bpm}</h4>
+	  </span>
+	  </div>
   </div>
   );
 }}

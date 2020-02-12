@@ -4,19 +4,35 @@
 .component {
 	background-color: $color-one;
 	margin:24px auto;
-	width: 60vw;
+	width: 80vw;
 	padding: 36px 24px;
 }
 
+.title {
+	font-size: 36px;
+	letter-spacing: 4px;
+	margin: 48px;
+}
 
-.row {
+
+.container {
 	display: flex;
-	flex-wrap: wrap-reverse;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
-.description {
-	width: 50%;
-	margin: auto;
+.box {
+	margin: 24px;
+	box-shadow: 12px 12px 44px black;
+	width: auto;
 }
 
+@media (max-width: 900px) {
+
+	iframe {
+		width: 260px;
+		height: 180px;
+	}
+
+
+}

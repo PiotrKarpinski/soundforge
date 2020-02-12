@@ -1,14 +1,14 @@
 @import 'settings.scss';
 
 h1 {
-	font-size: 36px;
-	margin: 48px 12px;
+	font-size: 48px;
+	margin:24px 12px 96px 12px;
 	letter-spacing: 12px;
 }
 
 .main {
 	background-color: $color-two;
-	padding: 192px 24px;
+	padding: 96px 24px;
 	transition: $transition;
 }
 
@@ -19,14 +19,14 @@ h1 {
 }
 
 .container {
-	height: 70vh;
+	height: 65vh;
 	display: flex;
 	flex-wrap: wrap;
-	margin: 12px 0;
+	margin: 24px 0;
 	justify-content: center;
 
 	div {
-		width: 10vw;
+		width: 15vw;
 		background-size: cover;
 		background-position: center;
 		transition: $transition;
@@ -65,3 +65,18 @@ h1 {
 
 }
 
+
+@media (max-width: 900px) {
+
+	.container {
+		height: 50vh;
+		div{
+			max-width: 12vw;
+	  		h4{
+  				font-size: 16px;
+  			}
+		}
+	}
+
+
+}

@@ -10,7 +10,7 @@ function Header() {
   return ( 
   <section id='header' className={styles.main}>
   <header>
-  	<h1>Pracownia dźwięku</h1>
+  	<h1>Layzee Beats</h1>
   	<div className={styles.container}>
   		<div style={{ backgroundImage: `url(${Beats})`}}>
   			<Link 

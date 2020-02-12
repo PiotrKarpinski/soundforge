@@ -7,8 +7,7 @@
 	flex-wrap: wrap;
 	margin: 48px 12px;
 	padding: 36px 24px;
-	width: 45vw;
-
+	justify-content: space-between;
 
 	h3 {
 		color: $color-one;
@@ -16,48 +15,69 @@
 }
 
 .component {
+	min-width: 25vw;
 	margin: 24px auto;
 	padding: 12px;
 	background-color: $color-one;
-	position: relative;
 	border-radius: 16px;
 	opacity: 0.8;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
 
+
+.img {
+	max-height: 100%;
+	max-width: 33%;
+}
+
+.player {
+	position: relative;
+	width: 33%;
 }
 
 .info {
-	margin-top: 24px;
+	width: 33%;
+	position: relative;
+
+	span {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	}
 }
 
 .info h4 {
-	
+	text-align: left;
 	padding: 0 8px;
-	display: inline;
-	border-left: solid 2px black;
+	display: block;
 }
 
-.info h4:first-child {
-	border: none;
-}
+
 
 .name {
+	font-size: 30px;
 	color: $color-three;
-	margin: 0;
+	top: 50%;
 	left: 50%;
-	top: 20%;
 	transform: translate(-50%,-50%);
 	position: absolute;
 	letter-spacing: 4px;
-	transition: $transition;
+	transition: opacity 0.2s, top 0.7s;
+	z-index: 999;
 
 }
 
 .button {
+	top: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
 	background-color: $color-one;
 	cursor: pointer;
 	border: none;
-	width: 100%;
-	height: 100%;
+
 }
 
 .button:focus {
@@ -65,8 +85,8 @@
 	}
 
 
-
 .play {
+	font-size: 30px;
 	transition: $transition;
 	opacity: 0;
 }
@@ -78,9 +98,86 @@
 
 .component:hover .name {
 	opacity: 0;
-	left: 0;
+	top: 100%;
 }
 
 .component:hover .play {
 	opacity: 1;
 }
+
+@media (max-width: 900px) {
+
+
+
+	.list {
+		margin: 0;
+		width: 90%;
+		padding: 18px 12px;
+	}
+
+	.info {
+		font-size: 12px;
+	}
+
+	.img {
+		max-width: 30%;
+	}
+
+
+}
+
+@media (max-width: 700px) {
+
+
+
+	.list {
+		padding: 18px 12px;
+	}
+
+	.name {
+		font-size: 18px;
+	}
+
+	.play {
+		font-size: 18px;
+	}
+
+	.info {
+		font-size: 12px;
+	}
+
+	.img {
+		max-width: 30%;
+	}
+
+
+}
+
+
+@media (max-width: 550px) {
+
+
+
+	.list {
+		padding: 18px 12px;
+	}
+
+	.name {
+		font-size: 12px;
+	}
+
+	.play {
+		font-size: 12px;
+	}
+
+	.info {
+		font-size: 8px;
+	}
+
+	.img {
+		width: 33%;
+	}
+
+
+}
+

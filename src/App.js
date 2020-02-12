@@ -24,13 +24,25 @@ class App extends React.Component {
 
 console.log(this.props.beats)
 for (let beat of this.props.beats) {
-  if (beat.type === 'Lease')
+  if (beat.type === 'Lease') {
     lease.push(beat)
-  if (beat.type === 'Exclusive' && beat.sold === false)
+  }
+  if (beat.type === 'Exclusive' && beat.sold === false) {
+
     exclusive.push(beat)
-  if (beat.sold)
-    sold.push(beat)  
+  }
+  if (beat.sold) {
+    sold.push(beat)    
+
+  }
+  if (beat.id > this.props.beats.length-4) {
+    latest.push(beat)
+  } 
 }
+
+    latest.reverse()
+
+
 
 
 
@@ -42,7 +54,7 @@ for (let beat of this.props.beats) {
     <div className='beats'>
     <h2>Beats Library</h2>
     <div id='beats' className='container'>
-    <SoundList  list="Latest" beats={lease}/>
+    <SoundList  list="Latest" beats={latest}/>
     <SoundList  list="Recently sold" beats={sold}/>
     <SoundList  list="Exclusive" beats={exclusive}/>
     <SoundList  list="Lease" beats={lease}/>

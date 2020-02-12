@@ -6,7 +6,8 @@
 		"BPM": "140",
 		"title": "Regret",
 		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-		"price": 99.99,
+		"img": "regret",
+		"price": 99.19,
 		"type": "Lease",
 		"date": 10022020,
 		"sold": false		
@@ -17,7 +18,8 @@
 		"title": "Fallin",
 		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
 		"price": 199.99,
-		"type": "Lease",
+		"img": "fallin",
+		"type": "Exclusive",
 		"date": 10022020,
 		"sold": false
 	},
@@ -27,25 +29,28 @@
 		"title": "Slow Down",
 		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
 		"price": 49.99,
+		"img": "slowDown",
 		"date": 10022020,
-		"type": "Exclusive",
+		"type": "Lease",
 		"sold": false		
 	},
 	{
 		"id": 4,
 		"BPM": 93,
 		"title": "Rabbit",
+		"img": "rabbit",
 		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
 		"price": 79.99,
 		"date": 10022020,
 		"type": "Exclusive",
-		"sold": true	
+		"sold": false	
 	},
 	{
 		"id": 5,
 		"BPM": 133,
 		"date": 10022019,
 		"title": "Mistakes",
+		"img": "mistakes",
 		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
 		"price": 149.99,
 		"type": "Lease",
@@ -56,15 +61,17 @@
 		"BPM": 83,
 		"title": "Problem",
 		"date": 15012020,
+		"img": "problem",
 		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
 		"price": 199.99,
 		"type": "Exclusive",
-		"sold": true			
+		"sold": false			
 	},
 		{
 		"id": 7,
 		"BPM": "140",
 		"title": "Vulture",
+		"img": "vulture",
 		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
 		"price": 99.99,
 		"type": "Lease",
@@ -74,7 +81,8 @@
 	{
 		"id": 8,
 		"BPM": 93,
-		"title": "Fire me",
+		"title": "Taken",
+		"img": "taken",		
 		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
 		"price": 199.99,
 		"type": "Lease",
@@ -84,7 +92,8 @@
 	{
 		"id": 9,
 		"BPM": 103,
-		"title": "Get Down",
+		"title": "Hunter",
+		"img": "hunter",
 		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
 		"price": 49.99,
 		"date": 10022020,
@@ -95,6 +104,7 @@
 		"id": 10,
 		"BPM": 93,
 		"title": "Red",
+		"img": "red",
 		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
 		"price": 79.99,
 		"date": 10022020,
@@ -105,13 +115,24 @@
 		"id": 11,
 		"BPM": 93,
 		"date": 10022019,
-		"title": "Fly trough",
+		"title": "Fly",
+		"img": "fly",
 		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
 		"price": 149.99,
-		"type": "Lease",
+		"type": "Exclusive",
+		"sold": false			
+	},
+	{
+		"id": 12,
+		"BPM": 93,
+		"date": 10022019,
+		"title": "Route",
+		"img": "route",
+		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+		"price": 149.99,
+		"type": "Exclusive",
 		"sold": false			
 	}
-
 		
 ]
 }

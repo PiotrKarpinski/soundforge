@@ -12,9 +12,10 @@
 }
 
 .beats h2 {
+  font-family: 'Nunito', sans-serif;
   padding-top: 36px;
   color: #ededed;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   font-size: 36px;
 }
 
@@ -37,7 +38,7 @@
     border-bottom: 1px solid #333;
 }
 
-h4,h3,h2{
+h5,h4,h3,h2{
   margin: 0;
   padding: 0;
 }

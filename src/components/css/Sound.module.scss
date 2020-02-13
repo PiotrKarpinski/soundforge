@@ -15,6 +15,7 @@
 }
 
 .component {
+	font-family: $font-text;
 	min-width: 25vw;
 	margin: 24px auto;
 	padding: 12px;
@@ -43,7 +44,7 @@
 
 	span {
 	top: 50%;
-	left: 50%;
+	left: 25%;
 	transform: translate(-50%,-50%);
 	position: absolute;
 	}
@@ -53,8 +54,18 @@
 	text-align: left;
 	padding: 0 8px;
 	display: block;
+
 }
 
+	h4:nth-child(6) {
+		color: green;
+	}	
+	h4:nth-child(4) {
+		color: $color-three;
+	}
+	h4:nth-child(5) {
+		color: $color-five;
+	}
 
 
 .name {

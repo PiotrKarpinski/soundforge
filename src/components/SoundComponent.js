@@ -40,13 +40,18 @@ class SoundComponent extends React.Component {
 	  	<h4 className={styles.name}>{this.props.title}</h4>
 	  	<button className={styles.button} onClick={this.togglePlay}><FontAwesomeIcon className={styles.play} icon={this.state.play ? faPause : faPlay}/></button>
 	  </div>
+
 	  <div className={styles.info}>
-	  <span>
-	  	<h4>Price: {this.props.price}$</h4>
-	  	<h4>License: {this.props.type}</h4>
-	  	<h4>BPM: {this.props.bpm}</h4>
-	  </span>
-	  </div>
+		  <span>
+		  	<h4>Price: {this.props.price}$</h4>
+		  	<h4>License: {this.props.type}</h4>
+		  	<h4>{this.props.bpm}</h4>
+		  	<h4 style={this.props.price === 0 ? {display: 'block'}:{ display:'none' }}>FREE</h4>
+		  	<h4 style={this.props.sold ? {display: 'block'}:{ display:'none' }}>SOLD ({this.props.type})</h4>
+		  	<h4 style={this.props.sold ? {display: 'none'}:{ display:'block' }}>AVAILABLE</h4>
+	  	
+		  </span>
+		  </div>
   </div>
   );
 }}

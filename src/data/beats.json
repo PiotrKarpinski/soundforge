@@ -1,139 +1,78 @@
 {
 	"beats":
 	[
+	
 	{
 		"id": 1,
-		"BPM": "140",
+		"BPM": 93,
 		"title": "Regret",
-		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
 		"img": "regret",
-		"price": 99.19,
+		"url": "http://www.layzeebeats.vot.pl/static/media/sound/regret.mp3",
+		"price": 99.99,
 		"type": "Lease",
-		"date": 10022020,
-		"sold": false		
+		"sold": false			
 	},
 	{
 		"id": 2,
 		"BPM": 93,
-		"title": "Fallin",
-		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-		"price": 199.99,
-		"img": "fallin",
+		"title": "River of Lights",
+		"img": "river",
+		"url": "http://www.layzeebeats.vot.pl/static/media/sound/river.mp3",
+		"price": 149.99,
 		"type": "Exclusive",
-		"date": 10022020,
-		"sold": false
-	},
+		"sold": false			
+	},	
 	{
 		"id": 3,
-		"BPM": 103,
-		"title": "Slow Down",
-		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-		"price": 49.99,
-		"img": "slowDown",
-		"date": 10022020,
-		"type": "Lease",
-		"sold": false		
-	},
-	{
-		"id": 4,
 		"BPM": 93,
-		"title": "Rabbit",
-		"img": "rabbit",
-		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-		"price": 79.99,
-		"date": 10022020,
-		"type": "Exclusive",
-		"sold": false	
-	},
-	{
-		"id": 5,
-		"BPM": 133,
-		"date": 10022019,
-		"title": "Mistakes",
-		"img": "mistakes",
-		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-		"price": 149.99,
+		"title": "Heist",
+		"img": "heist",
+		"url": "http://www.layzeebeats.vot.pl/static/media/sound/heist.mp3",
+		"price": 49.99,
 		"type": "Lease",
 		"sold": false			
 	},	
 	{
-		"id": 6,
-		"BPM": 83,
-		"title": "Problem",
-		"date": 15012020,
-		"img": "problem",
-		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-		"price": 199.99,
-		"type": "Exclusive",
-		"sold": false			
-	},
-		{
-		"id": 7,
-		"BPM": "140",
-		"title": "Vulture",
-		"img": "vulture",
-		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+		"id": 4,
+		"BPM": 93,
+		"title": "Kendi",
+		"img": "kendi",
+		"url": "http://www.layzeebeats.vot.pl/static/media/sound/kendi.mp3",
 		"price": 99.99,
 		"type": "Lease",
-		"date": 10022020,
-		"sold": true		
-	},
+		"sold": false			
+	},	
 	{
-		"id": 8,
+		"id": 5,
+		"BPM": 93,
+		"title": "Dizzy",
+		"img": "dizzy",
+		"url": "http://www.layzeebeats.vot.pl/static/media/sound/dizzy.mp3",
+		"price": 149.99,
+		"type": "Exclusive",
+		"sold": false			
+	},	
+	{
+		"id": 6,
 		"BPM": 93,
 		"title": "Taken",
-		"img": "taken",		
-		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-		"price": 199.99,
-		"type": "Lease",
-		"date": 10022020,
-		"sold": false
-	},
-	{
-		"id": 9,
-		"BPM": 103,
-		"title": "Hunter",
-		"img": "hunter",
-		"url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-		"price": 49.99,
-		"date": 10022020,
-		"type": "Exclusive",
-		"sold": true		
-	},
-	{
-		"id": 10,
-		"BPM": 93,
-		"title": "Red",
-		"img": "red",
-		"url": "http://www.layzeebeats.vot.pl/static/media/sound/vulture.mp3",
-		"price": 79.99,
-		"date": 10022020,
-		"type": "Exclusive",
-		"sold": true	
-	},
-	{
-		"id": 11,
-		"BPM": 93,
-		"date": 10022019,
-		"title": "Fly",
-		"img": "fly",
-		"url": "http://www.layzeebeats.vot.pl/static/media/sound/regret.mp3",
+		"img": "taken",
+		"url": "http://www.layzeebeats.vot.pl/static/media/sound/taken.mp3",
 		"price": 149.99,
 		"type": "Exclusive",
 		"sold": false			
-	},
+	},	
 	{
-		"id": 12,
+		"id": 7,
 		"BPM": 93,
-		"date": 10022019,
-		"title": "Route",
-		"img": "route",
-		"url": "http://www.layzeebeats.vot.pl/static/media/sound/route.mp3",
-		"price": 149.99,
-		"type": "Exclusive",
+		"title": "Vulture",
+		"img": "vulture",
+		"url": "http://www.layzeebeats.vot.pl/static/media/sound/vulture.mp3",
+		"price": 49.99,
+		"type": "Lease",
 		"sold": false			
 	}
-		
+
 ]
 }
 

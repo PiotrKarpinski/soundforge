@@ -1,17 +1,13 @@
 import React from 'react';
 import regretImg from '../images/beats/regret.jpg';
-import slowDownImg from '../images/beats/slowDown.jpg';
-import mistakesImg from '../images/beats/mistakes.jpg';
-import flyImg from '../images/beats/fly.jpg';
-import fallinImg from '../images/beats/fallin.jpg';
-import hunterImg from '../images/beats/hunter.jpg';
+import kendiImg from '../images/beats/kendi.jpg';
+import riverImg from '../images/beats/river.jpg';
 import vultureImg from '../images/beats/vulture.jpg';
-import redImg from '../images/beats/red.jpg';
-import problemImg from '../images/beats/problem.jpg';
+import heistImg from '../images/beats/heist.jpg';
 import takenImg from '../images/beats/taken.jpg';
-import routeImg from '../images/beats/route.jpg';
+import dizzyImg from '../images/beats/dizzy.jpg';
 import '../App.css';
-import rabbitImg from '../images/beats/rabbit.jpg';
+
 
 
 class Image extends React.Component {
@@ -21,17 +17,12 @@ class Image extends React.Component {
     let imgObj =
       {
 "regret":regretImg,
-"slowDown":slowDownImg,
-"mistakes":mistakesImg,
-"fly":flyImg,
-"hunter":hunterImg ,
-"red":redImg,
-"problem":problemImg,
+"kendi":kendiImg,
 "taken":takenImg,
-"route":routeImg,
-"rabbit":rabbitImg,
+"river":riverImg,
+"heist":heistImg,
 "vulture":vultureImg,
-"fallin": fallinImg
+"dizzy": dizzyImg
 }
         return (
         <img

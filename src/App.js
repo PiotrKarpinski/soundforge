@@ -24,17 +24,19 @@ class App extends React.Component {
 
 console.log(this.props.beats)
 for (let beat of this.props.beats) {
+  if (beat.sold) {
+    sold.push(beat)    
+
+  } 
   if (beat.type === 'Lease') {
+    beat.sold = false;
     lease.push(beat)
   }
   if (beat.type === 'Exclusive' && beat.sold === false) {
 
     exclusive.push(beat)
   }
-  if (beat.sold) {
-    sold.push(beat)    
 
-  }
   if (beat.id > this.props.beats.length-4) {
     latest.push(beat)
   } 

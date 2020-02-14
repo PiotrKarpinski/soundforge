@@ -1,6 +1,6 @@
 import {combineReducers, createStore } from 'redux';
 import Beats from '../data/beats.json'
-import cardReducer from './cardReducer';
+import playReducer from './playReducer';
 
 
 
@@ -9,7 +9,7 @@ const initialState = {
 }
 
 const reducers = {
-	card: cardReducer,
+	play: playReducer
 };
 
 Object.keys(initialState).forEach(item => {

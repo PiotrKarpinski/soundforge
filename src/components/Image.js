@@ -13,7 +13,6 @@ import '../App.css';
 class Image extends React.Component {
 
   render() {
-    console.log(this.props)
     let imgObj =
       {
 "regret":regretImg,

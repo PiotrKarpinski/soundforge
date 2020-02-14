@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import { faPause } from '@fortawesome/free-solid-svg-icons';
 import Image from './Image.js';
+import { connect } from 'react-redux'
+import { createAction_play } from '../redux/playReducer'
+
 
 class SoundComponent extends React.Component {
 	state = {
@@ -20,17 +23,38 @@ class SoundComponent extends React.Component {
     this.audio.removeEventListener('ended', () => this.setState({ play: false }));  
   }
 
+  handlePlay = () => {
+
+  		console.log(this.props.playing)
+  		console.log(this.props.url)
+    	console.log(this.audio.src)
+	  	this.props.play(this.audio.src)
+
+  	if (this.props.playing === undefined) {
+  		console.log('pierwsze')
+  		this.audio.play()
+  	} else if (this.props.playing !== this.audio.src) {
+  		console.log('zmiana') 		
+  		this.audio.play()
+  	} else if (this.props.playing === this.audio.src) {
+  		this.audio.pause()
+  	}
+
+  }
+
   togglePlay = () => {
-  	console.log(window.scrollY)
-  	console.log('test');
+
     this.setState({ play: !this.state.play }, () => {
-      this.state.play ? this.audio.play() : this.audio.pause();
+      this.state.play ? this.handlePlay() : this.audio.pause();
     });
+
+
   }
 
 
 
  render(){
+
   return ( 
   <div style={this.state.play ? {opacity: 1}:{ border: 'none' }} className={styles.component}>
 	  <div className ={styles.img}> 
@@ -56,4 +80,18 @@ class SoundComponent extends React.Component {
   );
 }}
 
-export default SoundComponent;
+
+const mapDispatchToProps = (dispatch,url) => ({
+    play: url => dispatch(createAction_play({
+        url
+    })),
+})
+
+const mapStateToProps = (state)=>{
+return {
+    playing: state.play.url
+     }
+}
+
+
+export default connect(mapStateToProps,mapDispatchToProps)(SoundComponent);

@@ -8,7 +8,7 @@
 		"title": "Regret",
 		"img": "regret",
 		"url": "http://www.layzeebeats.vot.pl/static/media/sound/regret.mp3",
-		"price": 99.99,
+		"price": 19.99,
 		"type": "Lease",
 		"sold": false			
 	},
@@ -18,7 +18,7 @@
 		"title": "River of Lights",
 		"img": "river",
 		"url": "http://www.layzeebeats.vot.pl/static/media/sound/river.mp3",
-		"price": 149.99,
+		"price": 29.99,
 		"type": "Exclusive",
 		"sold": false			
 	},	
@@ -28,7 +28,7 @@
 		"title": "Heist",
 		"img": "heist",
 		"url": "http://www.layzeebeats.vot.pl/static/media/sound/heist.mp3",
-		"price": 49.99,
+		"price": 19.99,
 		"type": "Lease",
 		"sold": false			
 	},	
@@ -38,7 +38,7 @@
 		"title": "Kendi",
 		"img": "kendi",
 		"url": "http://www.layzeebeats.vot.pl/static/media/sound/kendi.mp3",
-		"price": 99.99,
+		"price": 19.99,
 		"type": "Lease",
 		"sold": false			
 	},	
@@ -48,7 +48,7 @@
 		"title": "Dizzy",
 		"img": "dizzy",
 		"url": "http://www.layzeebeats.vot.pl/static/media/sound/dizzy.mp3",
-		"price": 149.99,
+		"price": 39.99,
 		"type": "Exclusive",
 		"sold": false			
 	},	
@@ -58,7 +58,7 @@
 		"title": "Taken",
 		"img": "taken",
 		"url": "http://www.layzeebeats.vot.pl/static/media/sound/taken.mp3",
-		"price": 149.99,
+		"price": 39.99,
 		"type": "Exclusive",
 		"sold": false			
 	},	
@@ -68,11 +68,20 @@
 		"title": "Vulture",
 		"img": "vulture",
 		"url": "http://www.layzeebeats.vot.pl/static/media/sound/vulture.mp3",
-		"price": 49.99,
+		"price": 19.99,
 		"type": "Lease",
 		"sold": false			
 	}
-
+	{
+		"id": 8,
+		"BPM": 159,
+		"title": "Snake",
+		"img": "snake",
+		"url": "http://www.layzeebeats.vot.pl/static/media/sound/snake.mp3",
+		"price": 29.99,
+		"type": "Exclusive",
+		"sold": false			
+	}
 ]
 }
 

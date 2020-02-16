@@ -6,6 +6,9 @@ import vultureImg from '../images/beats/vulture.jpg';
 import heistImg from '../images/beats/heist.jpg';
 import takenImg from '../images/beats/taken.jpg';
 import dizzyImg from '../images/beats/dizzy.jpg';
+import snakeImg from '../images/beats/snake.jpg';
+
+
 import '../App.css';
 
 
@@ -21,7 +24,8 @@ class Image extends React.Component {
 "river":riverImg,
 "heist":heistImg,
 "vulture":vultureImg,
-"dizzy": dizzyImg
+"dizzy": dizzyImg,
+"snake": snakeImg
 }
         return (
         <img

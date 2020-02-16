@@ -71,7 +71,7 @@
 		"price": 19.99,
 		"type": "Lease",
 		"sold": false			
-	}
+	},
 	{
 		"id": 8,
 		"BPM": 159,

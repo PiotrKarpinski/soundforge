@@ -13,7 +13,7 @@ class SoundComponent extends React.Component {
 		play: false,
 	}
 	audio = new Audio(this.props.url)
-
+	
 	componentDidMount() {
 
     this.audio.addEventListener('ended', () => this.setState({ play: false }));
@@ -23,7 +23,7 @@ class SoundComponent extends React.Component {
     this.audio.removeEventListener('ended', () => this.setState({ play: false }));  
   }
 
-  handlePlay = () => {
+  /*handlePlay = () => {
 
   		console.log(this.props.playing)
   		console.log(this.props.url)
@@ -34,18 +34,18 @@ class SoundComponent extends React.Component {
   		console.log('pierwsze')
   		this.audio.play()
   	} else if (this.props.playing !== this.audio.src) {
-  		console.log('zmiana') 		
+  		console.log('zmiana')
+  		this.audio.src = this.props.url	
   		this.audio.play()
   	} else if (this.props.playing === this.audio.src) {
-  		this.audio.pause()
-  	}
+  		this.audio.play()
 
-  }
+  }'*/
 
   togglePlay = () => {
 
     this.setState({ play: !this.state.play }, () => {
-      this.state.play ? this.handlePlay() : this.audio.pause();
+      this.state.play ? this.audio.play() : this.audio.pause();
     });
 
 

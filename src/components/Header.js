@@ -23,7 +23,7 @@ function Header() {
 			    ><h4>Go to my beats library!</h4></Link>
   		</div>
   		<div style={{ backgroundImage: `url(${Samples})`}}>
-  			<a rel="noopener noreferrer" target='_blank' href='https://www.facebook.com/layzee.beats/'><h4>Download FREE Samples!</h4></a>
+  			<a rel="noopener noreferrer" target='_blank' href='http://layzeebeats.vot.pl/static/media/sound/Layzee Sound Pack vol.1.rar'><h4>Download FREE Samples!</h4></a>
   		</div>
   		<div style={{ backgroundImage: `url(${Portfolio})`}}>
   			<Link

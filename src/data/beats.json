@@ -80,7 +80,27 @@
 		"url": "http://www.layzeebeats.vot.pl/static/media/sound/snake.mp3",
 		"price": 29.99,
 		"type": "Exclusive",
-		"sold": false			
+		"sold": true			
+	},
+	{
+		"id": 9,
+		"BPM": 151,
+		"title": "Skull",
+		"img": "skull",
+		"url": "http://www.layzeebeats.vot.pl/static/media/sound/skull.mp3",
+		"price": 39.99,
+		"type": "Exclusive",
+		"sold": false
+	},
+	{
+		"id": 10,
+		"BPM": 161,
+		"title": "Lost",
+		"img": "lost",
+		"url": "http://www.layzeebeats.vot.pl/static/media/sound/lost.mp3",
+		"price": 39.99,
+		"type": "Exclusive",
+		"sold": false
 	}
 ]
 }

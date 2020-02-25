@@ -22,7 +22,6 @@ const latest = [];
 class App extends React.Component {
   render() {
 
-console.log(this.props.beats)
 for (let beat of this.props.beats) {
   if (beat.sold) {
     sold.push(beat)    

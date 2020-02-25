@@ -8,9 +8,9 @@
 	position: fixed;
 	width: 100%;
     z-index: 9999;
-    -webkit-box-shadow: inset 0px -66px 42px -15px rgba(105,105,105,0.63);
-	-moz-box-shadow: inset 0px -66px 42px -15px rgba(105,105,105,0.63);
-	box-shadow: inset 0px -66px 42px -15px rgba(105,105,105,0.63);
+    -webkit-box-shadow: inset 0px -66px 42px -15px rgba(105,105,105,0.33);
+	-moz-box-shadow: inset 0px -66px 42px -15px rgba(105,105,105,0.33);
+	box-shadow: inset 0px -66px 42px -15px rgba(105,105,105,0.33);
 
 
 }
@@ -37,7 +37,7 @@
 
 		a:hover {
 
-			color: $color-four;
+			color: $color-three;
 		}
 
 	}

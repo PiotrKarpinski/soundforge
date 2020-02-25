@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './css/Nav.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faSoundcloud } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -17,7 +17,6 @@ function Nav() {
 
 	 	
 	 		<li><Link 
-				activeClass="active"
 			    to="portfolio"
 			    spy={true}
 			    smooth='easeOutCirc'
@@ -33,19 +32,18 @@ function Nav() {
 		    spy={true}
 		    smooth={true}
 		    offset={-70}
-			duration= {400}
+			duration= {800}
 		    style={{fontSize: 30+'px'}}
 		    ><FontAwesomeIcon icon={faHome}/></Link></li>
 
 			<li><a rel="noopener noreferrer" target='_blank' href='https://soundcloud.com/layzeone'><FontAwesomeIcon icon={faSoundcloud}/></a></li>
 
 	 		<li><Link 
-				activeClass="active"
 			    to="contact"
 			    spy={true}
 			    smooth={true}
 			    offset={-70}
-			    duration= {400}
+			    duration= {700}
 			    ><FontAwesomeIcon icon={faEnvelope}/></Link></li>
 
 	 	</ul>

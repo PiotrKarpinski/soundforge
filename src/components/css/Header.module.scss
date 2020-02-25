@@ -8,7 +8,7 @@ h1 {
 }
 
 .main {
-	background-color: $color-two;
+	background: linear-gradient(180deg, $color-one, $color-four, $color-two, $color-one) ;
 	padding: 96px 24px;
 	transition: $transition;
 }

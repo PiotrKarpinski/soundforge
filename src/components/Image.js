@@ -7,7 +7,8 @@ import heistImg from '../images/beats/heist.jpg';
 import takenImg from '../images/beats/taken.jpg';
 import dizzyImg from '../images/beats/dizzy.jpg';
 import snakeImg from '../images/beats/snake.jpg';
-
+import skullImg from '../images/beats/skull.jpg'
+import lostImg from '../images/beats/lost.jpg'
 
 import '../App.css';
 
@@ -25,7 +26,9 @@ class Image extends React.Component {
 "heist":heistImg,
 "vulture":vultureImg,
 "dizzy": dizzyImg,
-"snake": snakeImg
+"snake": snakeImg,
+"skull": skullImg,
+"lost": lostImg
 }
         return (
         <img
